@@ -125,7 +125,7 @@ class content:
         self.isnew = newtopic
 
 
-def build_schedule_f2021(srcdir):
+def build_schedule_f2022(srcdir):
     schd = schedule('M', '2021-08-23')
 
 #     schd.add_holiday('2021-09-06', 'Labor Day')
@@ -143,20 +143,5 @@ def build_schedule_f2021(srcdir):
     schd.add_content(content('lecture', 'Group A: Temp. Sensors and Computer Analysis', newtopic=True, link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
     schd.add_content(content('lecture', 'Group B: Temp. Sensors and Computer Analysis', link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
     
-    schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 1', newtopic=True, link=srcdir+'UVVis/uvvis_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group A: Electronic Spectroscopy Part 2', newtopic=False, link=srcdir+'UVVis/uvvis_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 1', link=srcdir+'UVVis/uvvis_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Electronic Spectroscopy Part 2', link=srcdir+'UVVis/uvvis_main_b.ipynb'))
-    
-    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 1', newtopic=True, link=srcdir+'Kinetics/kinetics_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group A: Gas Phase Kinetics Part 2', link=srcdir+'Kinetics/kinetics_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Gas Phase Kinetics Part 1', link=srcdir+'Kinetics/kinetics_main_b.ipynb'))
-    
-    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 1', newtopic=True, link=srcdir+'JouleThomson/joule_thomson_main_a.ipynb'))
-    schd.add_content(content('lecture', 'Group A: Joule Thomson Part 2', link=srcdir+'JouleThomson/joule_thomson_main_b.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 1'))
-    schd.add_content(content('lecture', 'Group B: Joule Thomson Part 2'))
-    
-#     schd.add_content(content('lecture', 'Freedom!'))
+    schd.add_content(content('lecture', 'Freedom!'))
     return schd
