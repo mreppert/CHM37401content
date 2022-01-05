@@ -125,13 +125,20 @@ class content:
         self.isnew = newtopic
 
 
-def build_schedule_f2022(srcdir):
-    schd = schedule('M', '2021-08-23')
+def build_schedule_s2022(srcdir):
+    schd = schedule('M', '2022-01-10')
 
 #     schd.add_holiday('2021-09-06', 'Labor Day')
     schd.add_holiday('2021-10-11', 'October Break (No labs)')
     schd.add_holiday('2021-10-12', 'October Break (No labs)')
     schd.add_holiday('2021-11-22', 'Thanksgiving (No labs)')
+    
+    #schd.add_holiday('2022-01-17', 'Martin Luther King Jr. Day')
+    schd.add_holiday('2022-03-14', 'Spring Vacation (No labs)')
+    schd.add_holiday('2022-03-15', 'Spring Vacation (No labs)')
+    schd.add_holiday('2022-03-16', 'Spring Vacation (No labs)')
+    schd.add_holiday('2022-03-17', 'Spring Vacation (No labs)')
+
     
 #     schd.add_holiday('2021-12-13', 'Finals')
 #     schd.add_holiday('2021-12-14', 'Finals')
@@ -140,8 +147,21 @@ def build_schedule_f2022(srcdir):
 #     schd.add_holiday('2021-12-17', 'Finals')
 #     schd.add_holiday('2021-12-18', 'Finals')
 
-    schd.add_content(content('lecture', 'Group A: Temp. Sensors and Computer Analysis', newtopic=True, link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Temp. Sensors and Computer Analysis', link=srcdir+'TempSensors/temp_sensors_main.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Diffusion and the Random Walk Model', newtopic=True, link=srcdir+'RandomWalk/random_walk_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Diffusion and the Random Walk Model', newtopic=False, link=srcdir+'RandomWalk/random_walk_main.ipynb'))
     
-    schd.add_content(content('lecture', 'Freedom!'))
+    
+    schd.add_content(content('lecture', 'Group A: Electron Diffraction', newtopic=True, link=srcdir+'ElectronDiffraction/electron_diffraction_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Electron Diffraction', newtopic=False, link=srcdir+'ElectronDiffraction/electron_diffraction_main.ipynb'))
+
+    schd.add_content(content('lecture', 'Group A: Raman Spectroscopy Part 1', newtopic=True, link=srcdir+'Raman/raman_part1_main.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Raman Spectroscopy Part 1', newtopic=False, link=srcdir+'Raman/raman_part1_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2_main.ipynb'))
+    
+    #schd.add_content(content('lecture', 'Group A: Ab Initio', newtopic=False, link=srcdir+'TempSensors/abinitio_main.ipynb'))    
+    
+    
+    
+#    schd.add_content(content('lecture', 'Freedom!'))
     return schd
