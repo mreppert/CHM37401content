@@ -147,8 +147,8 @@ def build_schedule_s2022(srcdir):
 #     schd.add_holiday('2021-12-17', 'Finals')
 #     schd.add_holiday('2021-12-18', 'Finals')
 
-    schd.add_content(content('lecture', 'Group A: Diffusion and the Random Walk Model', newtopic=True, link=srcdir+'RandomWalk/random_walk_main.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Diffusion and the Random Walk Model', newtopic=False, link=srcdir+'RandomWalk/random_walk_main.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Wavefunctions and Fourier Series', newtopic=True, link=srcdir+'Waves/waves_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Wavefunctions and Fourier Series', newtopic=False, link=srcdir+'Waves/waves_main.ipynb'))
     
     
     schd.add_content(content('lecture', 'Group A: Electron Diffraction', newtopic=True, link=srcdir+'ElectronDiffraction/electron_diffraction_main.ipynb'))
