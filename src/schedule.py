@@ -155,9 +155,9 @@ def build_schedule_s2022(srcdir):
     schd.add_content(content('lecture', 'Group B: Electron Diffraction', newtopic=False, link=srcdir+'ElectronDiffraction/electron_diffraction_main.ipynb'))
 
     schd.add_content(content('lecture', 'Group A: Raman Spectroscopy Part 1', newtopic=True, link=srcdir+'Raman/raman_part1_main.ipynb'))
-    schd.add_content(content('lecture', 'Group A: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2_main.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2.ipynb'))
     schd.add_content(content('lecture', 'Group B: Raman Spectroscopy Part 1', newtopic=False, link=srcdir+'Raman/raman_part1_main.ipynb'))
-    schd.add_content(content('lecture', 'Group B: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2.ipynb'))
     
     #schd.add_content(content('lecture', 'Group A: Ab Initio', newtopic=False, link=srcdir+'TempSensors/abinitio_main.ipynb'))    
     
