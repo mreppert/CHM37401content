@@ -169,16 +169,16 @@ def build_schedule_s2022(srcdir):
 def build_schedule_s2025(srcdir):
     schd = schedule('M', '2025-01-13')
 
-#     schd.add_holiday('2021-09-06', 'Labor Day')
+#    schd.add_holiday('2021-09-06', 'Labor Day')
 #    schd.add_holiday('2021-10-11', 'October Break (No labs)')
 #    schd.add_holiday('2021-10-12', 'October Break (No labs)')
 #    schd.add_holiday('2021-11-22', 'Thanksgiving (No labs)')
     
     #schd.add_holiday('2025-01-20', 'Martin Luther King Jr. Day')
-    schd.add_holiday('2022-03-18', 'Spring Vacation (No labs)')
-    schd.add_holiday('2022-03-19', 'Spring Vacation (No labs)')
-    schd.add_holiday('2022-03-20', 'Spring Vacation (No labs)')
-    schd.add_holiday('2022-03-21', 'Spring Vacation (No labs)')
+    schd.add_holiday('2025-03-18', 'Spring Vacation (No labs)')
+    schd.add_holiday('2025-03-19', 'Spring Vacation (No labs)')
+    schd.add_holiday('2025-03-20', 'Spring Vacation (No labs)')
+    schd.add_holiday('2025-03-21', 'Spring Vacation (No labs)')
 
     
 #     schd.add_holiday('2021-12-13', 'Finals')
