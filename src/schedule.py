@@ -165,3 +165,44 @@ def build_schedule_s2022(srcdir):
     
 #    schd.add_content(content('lecture', 'Freedom!'))
     return schd
+
+def build_schedule_s2025(srcdir):
+    schd = schedule('M', '2025-01-13')
+
+#     schd.add_holiday('2021-09-06', 'Labor Day')
+#    schd.add_holiday('2021-10-11', 'October Break (No labs)')
+#    schd.add_holiday('2021-10-12', 'October Break (No labs)')
+#    schd.add_holiday('2021-11-22', 'Thanksgiving (No labs)')
+    
+    #schd.add_holiday('2025-01-20', 'Martin Luther King Jr. Day')
+    schd.add_holiday('2022-03-18', 'Spring Vacation (No labs)')
+    schd.add_holiday('2022-03-19', 'Spring Vacation (No labs)')
+    schd.add_holiday('2022-03-20', 'Spring Vacation (No labs)')
+    schd.add_holiday('2022-03-21', 'Spring Vacation (No labs)')
+
+    
+#     schd.add_holiday('2021-12-13', 'Finals')
+#     schd.add_holiday('2021-12-14', 'Finals')
+#     schd.add_holiday('2021-12-15', 'Finals')
+#     schd.add_holiday('2021-12-16', 'Finals')
+#     schd.add_holiday('2021-12-17', 'Finals')
+#     schd.add_holiday('2021-12-18', 'Finals')
+
+    schd.add_content(content('lecture', 'Group A: Wavefunctions and Fourier Series', newtopic=True, link=srcdir+'Waves/waves_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Wavefunctions and Fourier Series', newtopic=False, link=srcdir+'Waves/waves_main.ipynb'))
+    
+    
+    schd.add_content(content('lecture', 'Group A: Electron Diffraction', newtopic=True, link=srcdir+'ElectronDiffraction/electron_diffraction_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Electron Diffraction', newtopic=False, link=srcdir+'ElectronDiffraction/electron_diffraction_main.ipynb'))
+
+    schd.add_content(content('lecture', 'Group A: Raman Spectroscopy Part 1', newtopic=True, link=srcdir+'Raman/raman_part1_main.ipynb'))
+    schd.add_content(content('lecture', 'Group A: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Raman Spectroscopy Part 1', newtopic=False, link=srcdir+'Raman/raman_part1_main.ipynb'))
+    schd.add_content(content('lecture', 'Group B: Raman Spectroscopy Part 2', newtopic=False, link=srcdir+'Raman/raman_part2.ipynb'))
+    
+    #schd.add_content(content('lecture', 'Group A: Ab Initio', newtopic=False, link=srcdir+'TempSensors/abinitio_main.ipynb'))    
+    
+    
+    
+#    schd.add_content(content('lecture', 'Freedom!'))
+    return schd
